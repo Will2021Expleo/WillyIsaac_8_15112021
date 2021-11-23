@@ -1,0 +1,29 @@
+.error {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.error h1 {
+    color: #FF6060;
+    font-size: 20em;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.error p {
+    color: #FF6060;
+}
+
+.error__link{
+    text-align: center;
+    color: #FF6060;
+}
+
+.error__link:hover {
+    text-decoration: none;
+    
+}

@@ -1,0 +1,42 @@
+.nav {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+    margin-top: 10px;
+    position: relative;
+}
+
+.navbox {
+    margin: 0;
+    display: flex;
+    height: 70%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.navbox a {
+    text-decoration: none;
+    color: #FF6060;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 5px;
+    position: relative;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.nav-active::after {
+    content: "";
+    width: 90%;
+    height: 1px;
+    background: #FF6060;
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+

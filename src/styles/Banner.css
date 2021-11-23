@@ -1,0 +1,26 @@
+.bannerHome__box {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.bannerHome__header {
+    opacity: 1;
+    border-radius: 25px;
+    width: 100%;
+    height: 220px;
+    margin: auto;
+}
+
+.bannerHome__box p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 48px;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
