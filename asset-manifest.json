@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/https//Will2021expleo.github.io/WillyIsaac_8_15112021/static/css/main.1ac2474b.chunk.css",
+    "main.js": "/https//Will2021expleo.github.io/WillyIsaac_8_15112021/static/js/main.bf50bef7.chunk.js",
+    "main.js.map": "/https//Will2021expleo.github.io/WillyIsaac_8_15112021/static/js/main.bf50bef7.chunk.js.map",
+    "runtime-main.js": "/https//Will2021expleo.github.io/WillyIsaac_8_15112021/static/js/runtime-main.3bbddd70.js",
+    "runtime-main.js.map": "/https//Will2021expleo.github.io/WillyIsaac_8_15112021/static/js/runtime-main.3bbddd70.js.map",
+    "static/js/2.729ade79.chunk.js": "/https//Will2021expleo.github.io/WillyIsaac_8_15112021/static/js/2.729ade79.chunk.js",
+    "static/js/2.729ade79.chunk.js.map": "/https//Will2021expleo.github.io/WillyIsaac_8_15112021/static/js/2.729ade79.chunk.js.map",
+    "index.html": "/https//Will2021expleo.github.io/WillyIsaac_8_15112021/index.html",
+    "static/css/main.1ac2474b.chunk.css.map": "/https//Will2021expleo.github.io/WillyIsaac_8_15112021/static/css/main.1ac2474b.chunk.css.map",
+    "static/js/2.729ade79.chunk.js.LICENSE.txt": "/https//Will2021expleo.github.io/WillyIsaac_8_15112021/static/js/2.729ade79.chunk.js.LICENSE.txt",
+    "static/media/banner_about.02e1c4f7.png": "/https//Will2021expleo.github.io/WillyIsaac_8_15112021/static/media/banner_about.02e1c4f7.png",
+    "static/media/banner_home-page.024f945a.png": "/https//Will2021expleo.github.io/WillyIsaac_8_15112021/static/media/banner_home-page.024f945a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3bbddd70.js",
+    "static/js/2.729ade79.chunk.js",
+    "static/css/main.1ac2474b.chunk.css",
+    "static/js/main.bf50bef7.chunk.js"
+  ]
+}
