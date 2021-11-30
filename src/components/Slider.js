@@ -1,44 +1,72 @@
-import React, { useState, Component } from "react";
+import React, { Component } from "react";
+import leftArrow from "../assets/previous.png";
+import rightArrow from "../assets/next.png";
 import "../styles/Slider.css";
-//import BtnSlider from 'BtnSlider'
-import { adsList } from "../datas/adsList"; //liste des données pour le slider
 
 class Slider extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      currentSlide: 0,
+    };
+  }
+
+  nextSlide = () => {
+    let newSlide =
+      this.state.currentSlide === this.props.pictures.length - 1
+        ? 0
+        : this.state.currentSlide + 1;
+    this.setState({ currentSlide: newSlide });
+    // console.log("vers la droite");
+  };
+
+  prevSlide = () => {
+    let newSlide =
+      this.state.currentSlide === 0
+        ? this.props.pictures.length - 1
+        : this.state.currentSlide - 1;
+    this.setState({ currentSlide: newSlide });
+    // console.log("vers la gauche");
+  };
+
   render() {
     return (
-      <div className="container-slider">
-        {adsList.map((obj, index) => {
-          return (
-            <div>
-              <img src={obj.pictures} alt="" />
+      <div className="slider__box">
+        <div className="slider__box__slide">
+          {/* Déplacement vers la gauche */}
+          <div className="slider__box__slide__left" onClick={this.prevSlide}>
+            <img src={leftArrow} alt="slide to left" />
+          </div>
+          {/* Affichage des images */}
+          {this.props.pictures.map((item, index) => {
+            return (
+              <img
+                src={item}
+                alt=""
+                key={index}
+                className={
+                  index === this.state.currentSlide
+                    ? "slider__box__slide__active-image"
+                    : "slider__box__slide__hidden"
+                }
+              />
+            );
+          })}
+          {/* Pagination (image en cours/nb tot d'image) */}
+          <div className="slide__number">
+            <div className="slide__number__index">
+              {this.state.currentSlide + 1}/{this.props.pictures.length}
             </div>
-          );
-        })}
+          </div>
+          {/* Déplacement vers la droite */}
+          <div className="slider__box__slide__right" onClick={this.nextSlide}>
+            <img src={rightArrow} alt="slide to right" />
+          </div>
+        </div>
       </div>
     );
   }
 }
 
 export default Slider;
-
-// import React, { Component } from "react";
-// import { adsList } from "../datas/adsList";
-// // import { Slide } from "react-slideshow-image";
-
-// const props = {};
-
-// class Slideshow extends Component {
-//   render() {
-//     return (
-//       <div slidecontainer>
-//         {adsList.map((image) => (
-//           <div className="slidecover" key={image.id}>
-//             <img className="slidecover" src={image.cover} />
-//           </div>
-//         ))}
-//       </div>
-//     );
-//   }
-// }
-
-// export default Slideshow;

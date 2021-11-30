@@ -3,17 +3,18 @@ import { adsList } from "../datas/adsList";
 import "../styles/Adshome.css";
 import { Link } from "react-router-dom";
 
+//les différentes annonces de maison sur la page d'accueil "Homepage"
 class AdsHome extends React.Component {
   render() {
     return (
       <div>
-        <ul className="adshome-content">
+        <ul className="adshome">
           {adsList.map((ads) => (
-            <li className="box-content" key={ads.id}>
-              <Link to="/HouseDetails">
-                <img className="image__cover" src={ads.cover} alt="" />
+            <li className="adshome__content" key={ads.id}>
+              <Link to={"/HouseDetails/" + ads.id}>
+                <img className="adshome__image-cover" src={ads.cover} alt="" />
               </Link>
-              {ads.title}
+              <p>{ads.title}</p>
             </li>
           ))}
         </ul>

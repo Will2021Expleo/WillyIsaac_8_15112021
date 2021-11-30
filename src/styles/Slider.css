@@ -1,0 +1,52 @@
+.slider__box__slide {
+    max-width: 100%;
+    height: 415px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.slider__box__slide__active-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+
+}
+
+.slider__box__slide__hidden {
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.slider__box__slide__left {
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.slider__box__slide__right {
+    position: absolute;
+    top: 40%;
+    right: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.slider__box__slide__left:hover,
+.slider__box__slide__right:hover {
+    opacity: 1;
+}
+
+.slide__number {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%
+}

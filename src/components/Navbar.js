@@ -6,14 +6,14 @@ import logo from "../assets/logo_header.png";
 class Navbar extends Component {
   render() {
     return (
-      <div className="nav">
+      <div className="navbar__box">
         <img src={logo} alt="kasa" />
-        <div className="navbox">
-          <NavLink exact to="/" activeClassName="nav-active">
+        <div className="navbar__box__content">
+          <NavLink exact to="/" activeClassName="navbar__nav-active">
             Accueil
           </NavLink>
 
-          <NavLink exact to="/About" activeClassName="nav-active">
+          <NavLink exact to="/About" activeClassName="navbar__nav-active">
             A propos
           </NavLink>
         </div>

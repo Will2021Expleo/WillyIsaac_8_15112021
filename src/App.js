@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "./Navbar";
-import Homepage from "./Homepage";
-import Errorpage from "./ErrorPage";
-import About from "./About";
-import Footer from "./Footer";
-import Housedetails from "./HouseDetails";
+import Navbar from "./components/Navbar";
+import Homepage from "./pages/Homepage";
+import Errorpage from "./components/ErrorPage";
+import About from "./pages/About";
+import Footer from "./components/Footer";
+import Housedetails from "./pages/HouseDetails";
+import "./styles/App.css";
 
 class App extends Component {
   render() {
@@ -16,7 +17,8 @@ class App extends Component {
           <Switch>
             <Route path="/" exact component={Homepage} />
             <Route path="/About" exact component={About} />
-            <Route path="/HouseDetails" exact component={Housedetails} />
+            <Route path="/HouseDetails/:id" component={Housedetails} />
+            {/* id désigne un lien spécique basé sur l'idée de l'élément cliqué */}
             <Route component={Errorpage} />
           </Switch>
           <Footer />

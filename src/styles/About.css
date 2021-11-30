@@ -1,4 +1,9 @@
-.bannerAbout__box {
+body {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.about__box-banner {
     width: 100%;
     margin: auto;
     display: flex;
@@ -7,25 +12,59 @@
     position: relative;
 }
 
-.bannerAbout__header {
+.about__header-banner {
     opacity: 1;
     border-radius: 25px;
     width: 100%;
     height: 220px;
+    margin-bottom: 20px;
+}
+
+.about__content {
     margin-bottom: 30px;
 }
 
-.about__fiability {
-    margin: auto;
-    width: 90%;
+.about__fiability,
+.about__security,
+.about__services,
+.about__respect {
+    margin: 20px 0 0 0;
+    width: 100%;
+
+}
+
+.about__fiability__title,
+.about__security__title,
+.about__services__title,
+.about__respect__title {
     border-radius: 3px;
     background: #FF6060;
     color: #FFF;
-}
-
-.aboutFiability__title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 20px;
+    margin: 0;
+    padding: 5px 15px;
+    font-weight: 500;
+
+}
+
+.about__fiability__content,
+.about__security__content,
+.about__services__content,
+.about__respect__content {
+    background: #f7f7f7;
+    border-radius: 5px;
+    color: #FF6060;
+    margin: 0;
+    padding: 15px;
+    text-align: justify;
+}
+
+.up{
+    transform: rotate(180deg)
+}
+
+i{
+    cursor : pointer;
 }

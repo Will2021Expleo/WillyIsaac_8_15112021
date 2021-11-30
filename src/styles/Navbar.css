@@ -1,4 +1,4 @@
-.nav {
+.navbar__box {
     height: 50px;
     display: flex;
     flex-direction: row;
@@ -8,7 +8,7 @@
     position: relative;
 }
 
-.navbox {
+.navbar__box__content {
     margin: 0;
     display: flex;
     height: 70%;
@@ -18,7 +18,7 @@
     position: relative;
 }
 
-.navbox a {
+.navbar__box__content a {
     text-decoration: none;
     color: #FF6060;
     cursor: pointer;
@@ -29,10 +29,10 @@
     font-size: 24px;
 }
 
-.nav-active::after {
+.navbar__nav-active::after {
     content: "";
     width: 90%;
-    height: 1px;
+    height: 2px;
     background: #FF6060;
     position: absolute;
     bottom: 1px;

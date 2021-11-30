@@ -1,4 +1,4 @@
-.bannerHome__box {
+.banner__home__box {
     width: 100%;
     margin: auto;
     display: flex;
@@ -7,7 +7,7 @@
     position: relative;
 }
 
-.bannerHome__header {
+.banner__home__header {
     opacity: 1;
     border-radius: 25px;
     width: 100%;
@@ -15,7 +15,7 @@
     margin: auto;
 }
 
-.bannerHome__box p {
+.banner__home__box p {
     text-align: center;
     font-weight: 500;
     font-size: 48px;
