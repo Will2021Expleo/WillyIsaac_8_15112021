@@ -34,6 +34,7 @@ class About extends Component {
         <div className="about__content">
           {Subs.map((oneElement) => (
             <SubAbout
+              key={oneElement.title}
               title={oneElement.title}
               description={oneElement.description}
             />

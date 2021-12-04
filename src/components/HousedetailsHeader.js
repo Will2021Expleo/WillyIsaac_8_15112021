@@ -28,7 +28,7 @@ class Housedetailsheader extends Component {
           </div>
           {/* <div className="rating">{this.props.rating}</div> */}
           <div className="house-details__header__rating">
-            <Houserating rating={this.props.rating} />
+            <Houserating key={this.props.rating} rating={this.props.rating} />
           </div>
         </div>
       </div>

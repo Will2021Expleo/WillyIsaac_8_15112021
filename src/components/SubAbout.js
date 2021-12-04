@@ -19,6 +19,7 @@ class SubAbout extends Component {
         <div className="about__title">
           <h3>{this.props.title}</h3>
           <i
+            key={this.props.title}
             className={
               this.state.visible ? "fas fa-chevron-up" : "fas fa-chevron-down"
             }

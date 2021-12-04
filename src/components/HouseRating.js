@@ -17,6 +17,7 @@ class Houserating extends Component {
     for (let i = 0; i < this.state.starNumber; i++) {
       images.push(
         <img
+          key={images}
           className="house-details__header__rating-image"
           src={fullRating}
           alt=""
@@ -27,13 +28,14 @@ class Houserating extends Component {
     for (let i = 0; i < grayStars; i++) {
       images.push(
         <img
+          key={images}
           className="house-details__header__rating-image"
           src={emptyRating}
           alt=""
         />
       );
     }
-    return <div key={images}>{images}</div>;
+    return <div>{images}</div>;
   }
 }
 
