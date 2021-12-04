@@ -16,20 +16,20 @@
 
 .house-details__header-left h1 {
     margin: 0;
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 500;
 }
 
 .house-details__header-left p {
-    margin: 0;
+    margin: 5px 0 0 0;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .house-details__header-tagsbox {
     display: flex;
     flex-direction: row;
-    margin: 10px 0 15px 0;
+    margin: 15px 0 0 0;
     padding: 0;
     flex-wrap: wrap;
 
@@ -40,11 +40,12 @@
     border-radius: 15px;
     text-align: center;
     background: #ff6060;
-    width: 130px;
+    padding: 2px 20px;
     font-size: 14px;
     list-style: none;
-    margin-right: 20px;
+    margin: 0 10px 10px 0;
     margin-bottom: 10px;
+
 }
 
 .house-details__header-right {
@@ -82,8 +83,72 @@
 }
 
 .house-details__header__rating {
-    /* color: #FF6060; */
-    position: absolute;
-    top: 80px;
-    right: 100px;
+    display: flex;
+    flex-direction: row;
+    margin: 85px 0 0 0;
+}
+
+@media(max-width: 768px) {
+    .house-details__header {
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+
+    .house-details__header-right {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
+
+    .house-details__header__rating {
+        margin: 0;
+    }
+
+    .house-details__header__identification {
+        justify-content: center;
+        align-self: start;
+    }
+
+    .house-details__header-left {
+        width: 100%;
+    }
+
+    .house-details__header-left h1 {
+        font-size: 30px;
+    }
+
+}
+
+@media(max-width:450px) {
+    .house-details__header-left h1 {
+        font-size: 24px;
+    }
+
+    .house-details__header-left p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:350px) {
+    .house-details__header-left h1 {
+        font-size: 20px;
+    }
+
+    .house-details__header-left p {
+        font-size: 14px;
+    }
+
+    .house-details__header-tagsbox li {
+        font-size: 14px
+    }
+
+    .house-details__header__identification__name{
+        font-size: 14px
+    }
+
+    .house-details__header__rating-image{
+        width:10%;
+    }
 }

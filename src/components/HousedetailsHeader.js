@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../styles/HousedetailsHeader.css";
 import HouseRating from "./HouseRating";
 
-class HousedetailsHeader extends Component {
+class Housedetailsheader extends Component {
   render() {
     return (
       <div className="house-details__header">
@@ -28,7 +28,7 @@ class HousedetailsHeader extends Component {
           </div>
           {/* <div className="rating">{this.props.rating}</div> */}
           <div className="house-details__header__rating">
-            <HouseRating scaleValue={this.props.rating} />
+            <HouseRating rating={this.props.rating} />
           </div>
         </div>
       </div>
@@ -36,4 +36,4 @@ class HousedetailsHeader extends Component {
   }
 }
 
-export default HousedetailsHeader;
+export default Housedetailsheader;

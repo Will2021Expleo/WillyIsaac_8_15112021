@@ -5,32 +5,35 @@ import emptyRating from "../assets/Star_Empty.png";
 class HouseRating extends Component {
   constructor(props) {
     super(props);
-    this.number = this.props.rating;
     this.state = {
-      starNumber: 5,
+      starNumber: this.props.rating,
     };
     console.log(this.state);
   }
 
-  starScale = () => {
-    let scaleFullStar =
-      this.state.starNumber === 5
-        ? <img src={fullRating} alt="" /> * 5
-        : <img src={fullRating} alt="" /> * this.number +
-          <img src={emptyRating} alt="" /> * (5 - this.number);
-    this.setState({ starNumber: scaleFullStar }, () => {
-      console.log(scaleFullStar);
-    });
-  };
-
   render() {
-    return (
-      <div>
-        {/* {this.starScale} */}
-
-        {/* <img src={fullRating} alt="" /> */}
-      </div>
-    );
+    let images = [];
+    console.log(this.state.starNumber);
+    for (let i = 0; i < this.state.starNumber; i++) {
+      images.push(
+        <img
+          className="house-details__header__rating-image"
+          src={fullRating}
+          alt=""
+        />
+      );
+    }
+    let grayStars = 5 - this.state.starNumber;
+    for (let i = 0; i < grayStars; i++) {
+      images.push(
+        <img
+          className="house-details__header__rating-image"
+          src={emptyRating}
+          alt=""
+        />
+      );
+    }
+    return <div key={images}>{images}</div>;
   }
 }
 

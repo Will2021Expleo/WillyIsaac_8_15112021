@@ -1,11 +1,11 @@
 import React from "react";
 import "../styles/Housedetails.css";
 import Slider from "../components/Slider";
-import HousedetailsHeader from "../components/HousedetailsHeader";
-import HousedetailsContent from "../components/HousedetailsContent";
+import Housedetailsheader from "../components/Housedetailsheader";
+import Housedetailscontent from "../components/Housedetailscontent";
 import ErrorPage from "../components/ErrorPage";
 
-import { adsList } from "../datas/adsList";
+import { AdsList } from "../datas/AdsList";
 
 class HouseDetails extends React.Component {
   constructor(props) {
@@ -18,7 +18,7 @@ class HouseDetails extends React.Component {
 
   componentDidMount() {
     this.setState({
-      currentHouse: adsList.find((currentHouse) => currentHouse.id === this.id),
+      currentHouse: AdsList.find((currentHouse) => currentHouse.id === this.id),
     });
   }
 
@@ -27,7 +27,7 @@ class HouseDetails extends React.Component {
       <div>
         <Slider pictures={this.state.currentHouse.pictures} />
 
-        <HousedetailsHeader
+        <Housedetailsheader
           title={this.state.currentHouse.title}
           location={this.state.currentHouse.location}
           rating={this.state.currentHouse.rating}
@@ -36,7 +36,7 @@ class HouseDetails extends React.Component {
           hostpicture={this.state.currentHouse.host}
         />
 
-        <HousedetailsContent
+        <Housedetailscontent
           description={this.state.currentHouse.description}
           equipments={this.state.currentHouse.equipments}
         />

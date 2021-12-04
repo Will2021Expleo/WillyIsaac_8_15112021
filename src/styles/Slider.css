@@ -50,3 +50,26 @@
     bottom: 20px;
     left: 50%
 }
+
+
+@media(max-width: 768px) {
+    .slider__box {
+        width: 90%;
+        margin: auto;
+    }
+
+    .slider__box__slide__left img,
+    .slider__box__slide__right img {
+        width: 25px;
+    }
+
+    .slide__number {
+        display: none;
+    }
+}
+
+@media(max-width:450px){
+    .slider__box__slide{
+        height:280px
+    }
+}

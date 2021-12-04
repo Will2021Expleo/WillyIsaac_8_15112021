@@ -1,19 +1,13 @@
-body {
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.about__box-banner {
+.about__page {
     width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    position: relative;
+    align-items: center;
 }
 
 .about__header-banner {
-    opacity: 1;
     border-radius: 25px;
     width: 100%;
     height: 220px;
@@ -21,50 +15,96 @@ body {
 }
 
 .about__content {
-    margin-bottom: 30px;
+    width: 90%;
 }
 
-.about__fiability,
-.about__security,
-.about__services,
-.about__respect {
-    margin: 20px 0 0 0;
+.about__box {
+    margin: 0px 0 20px 0;
     width: 100%;
 
 }
 
-.about__fiability__title,
-.about__security__title,
-.about__services__title,
-.about__respect__title {
-    border-radius: 3px;
+.about__title {
+    width: 100%;
+    border-radius: 5px;
     background: #FF6060;
     color: #FFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
-    padding: 5px 15px;
-    font-weight: 500;
+    padding: 0 0 0 0;
 
 }
 
-.about__fiability__content,
-.about__security__content,
-.about__services__content,
-.about__respect__content {
-    background: #f7f7f7;
+.about__title h3 {
+    margin: 10px;
+    font-weight: 500;
+    font-size: 24px;
+    z-index: 99;
+}
+
+.about__title i {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.about__description {
+    width: 100%;
+    margin: 0 0 25px 0;
+    padding: 0 0 0 0;
+    font-size: 22px;
+    border-radius: 5px;
+
+}
+
+.about__description p {
+    margin: 0px;
+    font-size: 22px;
     border-radius: 5px;
     color: #FF6060;
-    margin: 0;
-    padding: 15px;
-    text-align: justify;
+    background: #f7f7f7;
+    padding: 20px 15px 15px 15px;
 }
 
-.up{
-    transform: rotate(180deg)
+
+@media(max-width: 768px) {
+    .about__page {
+        width: 90%;
+        margin: auto;
+    }
+
+    .about__content {
+        width: 100%;
+    }
+
+
+    .about__description p {
+        font-size: 20px;
+
+    }
+
+    .about__header-banner {
+        height: 160px;
+        object-fit: cover;
+    }
 }
 
-i{
-    cursor : pointer;
+@media(max-width:450px) {
+    .about__title h3 {
+        font-size: 20px;
+    }
+
+    .about__description p {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:350px) {
+    .about__title h3 {
+        font-size: 18px;
+    }
+
+    .about__description p {
+        font-size: 16px;
+    }
 }

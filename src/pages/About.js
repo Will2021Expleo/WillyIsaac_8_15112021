@@ -1,25 +1,43 @@
 import React, { Component } from "react";
 import bannerAbout from "../assets/banner_about.png";
-import AboutFiability from "../components/AboutFiability";
-import AboutRespect from "../components/AboutRespect";
-import AboutServices from "../components/AboutServices";
-import AboutSecurity from "../components/AboutSecurity";
 import "../styles/About.css";
+import SubAbout from "../components/SubAbout";
+
+let Subs = [
+  {
+    title: "Fiabilité",
+    description:
+      "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.",
+  },
+  {
+    title: "Respect",
+    description:
+      "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.",
+  },
+  {
+    title: "Sécurité",
+    description:
+      "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.",
+  },
+  {
+    title: "Services",
+    description:
+      "Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.",
+  },
+];
 
 class About extends Component {
   render() {
     return (
-      <div className="about__box-banner">
+      <div className="about__page">
         <img className="about__header-banner" src={bannerAbout} alt="About" />
         <div className="about__content">
-          {/* Fiabilité */}
-          <AboutFiability />
-          {/* Respect */}
-          <AboutRespect />
-          {/* Services */}
-          <AboutServices />
-          {/* Sécurité */}
-          <AboutSecurity />
+          {Subs.map((oneElement) => (
+            <SubAbout
+              title={oneElement.title}
+              description={oneElement.description}
+            />
+          ))}
         </div>
       </div>
     );

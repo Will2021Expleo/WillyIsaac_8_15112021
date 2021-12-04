@@ -18,7 +18,7 @@ class App extends Component {
             <Route path="/" exact component={Homepage} />
             <Route path="/About" exact component={About} />
             <Route path="/HouseDetails/:id" component={Housedetails} />
-            {/* id désigne un lien spécique basé sur l'idée de l'élément cliqué */}
+            {/* id désigne un lien spécique qui correspond à l'id de l'élément cliqué */}
             <Route component={Errorpage} />
           </Switch>
           <Footer />

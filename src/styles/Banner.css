@@ -24,3 +24,19 @@
     right: 0;
     width: 100%;
 }
+
+@media(max-width: 768px) {
+    .banner__home__box {
+        width: 90%;
+        margin: auto;
+    }
+
+    .banner__home__header {
+        height: 160px;
+        object-fit: cover;
+    }
+
+    .banner__home__box p {
+        font-size: 24px;
+    }
+}
