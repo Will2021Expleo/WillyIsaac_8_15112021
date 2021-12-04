@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import fullRating from "../assets/Star_Full.png";
 import emptyRating from "../assets/Star_Empty.png";
 
-class HouseRating extends Component {
+class Houserating extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -37,4 +37,4 @@ class HouseRating extends Component {
   }
 }
 
-export default HouseRating;
+export default Houserating;

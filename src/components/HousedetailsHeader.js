@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../styles/HousedetailsHeader.css";
-import HouseRating from "./HouseRating";
+import Houserating from "./Houserating";
 
 class Housedetailsheader extends Component {
   render() {
@@ -28,7 +28,7 @@ class Housedetailsheader extends Component {
           </div>
           {/* <div className="rating">{this.props.rating}</div> */}
           <div className="house-details__header__rating">
-            <HouseRating rating={this.props.rating} />
+            <Houserating rating={this.props.rating} />
           </div>
         </div>
       </div>
