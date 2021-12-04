@@ -8,12 +8,12 @@ class Houserating extends Component {
     this.state = {
       starNumber: this.props.rating,
     };
-    console.log(this.state);
+    // console.log(this.state);
   }
 
   render() {
     let images = [];
-    console.log(this.state.starNumber);
+    // console.log(this.state.starNumber);
     for (let i = 0; i < this.state.starNumber; i++) {
       images.push(
         <img
