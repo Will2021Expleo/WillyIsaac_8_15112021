@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import AdsHome from "../components/AdsHome";
-import BannerHome from "../components/BannerHome";
+import Adshome from "../components/Adshome";
+import Bannerhome from "../components/Bannerhome";
 
 // import "../styles/App.css";
 
@@ -8,8 +8,8 @@ class Homepage extends Component {
   render() {
     return (
       <div>
-        <BannerHome />
-        <AdsHome />
+        <Bannerhome />
+        <Adshome />
       </div>
     );
   }

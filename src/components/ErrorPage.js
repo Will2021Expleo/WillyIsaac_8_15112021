@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Errorpage.css";
 
-class ErrorPage extends Component {
+class Errorpage extends Component {
   render() {
     return (
       <div>
@@ -19,4 +19,4 @@ class ErrorPage extends Component {
   }
 }
 
-export default ErrorPage;
+export default Errorpage;

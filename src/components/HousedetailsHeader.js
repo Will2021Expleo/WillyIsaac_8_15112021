@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../styles/HousedetailsHeader.css";
+import "../styles/Housedetailsheader.css";
 import Houserating from "./Houserating";
 
 class Housedetailsheader extends Component {

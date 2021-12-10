@@ -1,4 +1,4 @@
-export const AdsList = [
+export const Adslist = [
   {
     id: "c67ab8a7",
     title: "Appartement cosy",

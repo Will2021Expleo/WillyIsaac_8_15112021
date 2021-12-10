@@ -3,11 +3,11 @@ import "../styles/Housedetails.css";
 import Slider from "../components/Slider";
 import Housedetailsheader from "../components/Housedetailsheader";
 import Housedetailscontent from "../components/Housedetailscontent";
-import ErrorPage from "../components/ErrorPage";
+import Errorpage from "../components/Errorpage";
 
-import { AdsList } from "../datas/AdsList";
+import { Adslist } from "../datas/Adslist";
 
-class HouseDetails extends React.Component {
+class Housedetails extends React.Component {
   constructor(props) {
     super(props);
     this.id = this.props.match.params.id;
@@ -18,7 +18,7 @@ class HouseDetails extends React.Component {
 
   componentDidMount() {
     this.setState({
-      currentHouse: AdsList.find((currentHouse) => currentHouse.id === this.id),
+      currentHouse: Adslist.find((currentHouse) => currentHouse.id === this.id),
     });
   }
 
@@ -42,9 +42,9 @@ class HouseDetails extends React.Component {
         />
       </div>
     ) : (
-      <ErrorPage />
+      <Errorpage />
     );
   }
 }
 
-export default HouseDetails;
+export default Housedetails;

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class SubAbout extends Component {
+class Subabout extends Component {
   constructor(props) {
     super(props);
 
@@ -34,4 +34,4 @@ class SubAbout extends Component {
   }
 }
 
-export default SubAbout;
+export default Subabout;

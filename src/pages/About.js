@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import bannerAbout from "../assets/banner_about.png";
+import banner_about from "../assets/banner_about.png";
 import "../styles/About.css";
-import SubAbout from "../components/SubAbout";
+import Subabout from "../components/Subabout";
 
 let Subs = [
   {
@@ -30,10 +30,10 @@ class About extends Component {
   render() {
     return (
       <div className="about__page">
-        <img className="about__header-banner" src={bannerAbout} alt="About" />
+        <img className="about__header-banner" src={banner_about} alt="About" />
         <div className="about__content">
           {Subs.map((oneElement) => (
-            <SubAbout
+            <Subabout
               key={oneElement.title}
               title={oneElement.title}
               description={oneElement.description}
