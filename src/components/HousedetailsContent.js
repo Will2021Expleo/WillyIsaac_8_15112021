@@ -6,8 +6,8 @@ class Housedetailscontent extends Component {
     super(props);
 
     this.state = {
-      visibleDescription: true,
-      visibleEquipment: true,
+      visibleDescription: false,
+      visibleEquipment: false,
     };
   }
 

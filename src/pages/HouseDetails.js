@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "../styles/Housedetails.css";
 import Slider from "../components/Slider";
 import Housedetailsheader from "../components/Housedetailsheader";
