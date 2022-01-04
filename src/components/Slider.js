@@ -6,10 +6,9 @@ import "../styles/Slider.css";
 class Slider extends Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      currentSlide: 0,
-    };
+    this.picture = this.props.pictures;
+    this.arrayPicturesLength = this.props.pictures.length;
+    this.state = { currentSlide: 0 };
   }
 
   nextSlide = () => {
@@ -36,7 +35,11 @@ class Slider extends Component {
         <div className="slider__box__slide">
           {/* Déplacement vers la gauche */}
           <div className="slider__box__slide__left" onClick={this.prevSlide}>
-            <img src={leftArrow} alt="slide to left" />
+            <img
+              src={leftArrow}
+              alt="slide to left"
+              style={this.arrayPicturesLength === 1 ? { display: "none" } : {}}
+            />
           </div>
           {/* Affichage des images */}
           {this.props.pictures.map((item, index) => {
@@ -61,7 +64,11 @@ class Slider extends Component {
           </div>
           {/* Déplacement vers la droite */}
           <div className="slider__box__slide__right" onClick={this.nextSlide}>
-            <img src={rightArrow} alt="slide to right" />
+            <img
+              src={rightArrow}
+              alt="slide to right"
+              style={this.arrayPicturesLength === 1 ? { display: "none" } : {}}
+            />
           </div>
         </div>
       </div>

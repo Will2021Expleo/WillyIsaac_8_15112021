@@ -23,6 +23,7 @@ class Housedetails extends React.Component {
   }
 
   render() {
+    // console.log(this.props);
     return this.state.currentHouse ? (
       <div>
         <Slider pictures={this.state.currentHouse.pictures} />
