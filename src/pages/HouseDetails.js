@@ -3,7 +3,7 @@ import "../styles/Housedetails.css";
 import Slider from "../components/Slider";
 import HouseDetailsHeader from "../components/HousedDetailsHeader";
 import HouseDetailsContent from "../components/HouseDetailsContent";
-import ErrorPage from "../components/ErrorPage";
+import ErrorPage from "./ErrorPage";
 
 import { Adslist } from "../datas/Adslist";
 
