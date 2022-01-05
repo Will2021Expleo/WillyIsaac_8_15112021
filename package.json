@@ -2,7 +2,7 @@
   "name": "kasa",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Will2021Expleo.github.io/WillyIsaac_8_15112021",
+  "homepage": "https://Will2021Expleo.github.io/WillyIsaac_8_15112021/index.html",
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
