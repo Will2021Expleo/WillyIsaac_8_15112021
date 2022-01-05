@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import "../styles/Housedetails.css";
 import Slider from "../components/Slider";
-import Housedetailsheader from "../components/Housedetailsheader";
-import Housedetailscontent from "../components/Housedetailscontent";
-import Errorpage from "../components/Errorpage";
+import HouseDetailsHeader from "../components/HousedDetailsHeader";
+import HouseDetailsContent from "../components/HouseDetailsContent";
+import ErrorPage from "../components/ErrorPage";
 
 import { Adslist } from "../datas/Adslist";
 
-class Housedetails extends React.Component {
+class HouseDetails extends Component {
   constructor(props) {
     super(props);
     this.id = this.props.match.params.id;
@@ -28,7 +28,7 @@ class Housedetails extends React.Component {
       <div>
         <Slider pictures={this.state.currentHouse.pictures} />
 
-        <Housedetailsheader
+        <HouseDetailsHeader
           title={this.state.currentHouse.title}
           location={this.state.currentHouse.location}
           rating={this.state.currentHouse.rating}
@@ -37,15 +37,15 @@ class Housedetails extends React.Component {
           hostpicture={this.state.currentHouse.host}
         />
 
-        <Housedetailscontent
+        <HouseDetailsContent
           description={this.state.currentHouse.description}
           equipments={this.state.currentHouse.equipments}
         />
       </div>
     ) : (
-      <Errorpage />
+      <ErrorPage />
     );
   }
 }
 
-export default Housedetails;
+export default HouseDetails;

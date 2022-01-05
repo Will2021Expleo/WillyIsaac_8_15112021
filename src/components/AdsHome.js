@@ -4,7 +4,7 @@ import "../styles/Adshome.css";
 import { Link } from "react-router-dom";
 
 //les différentes annonces de maison sur la page d'accueil "Homepage"
-class Adshome extends React.Component {
+class AdsHome extends React.Component {
   render() {
     return (
       <div>
@@ -23,4 +23,4 @@ class Adshome extends React.Component {
   }
 }
 
-export default Adshome;
+export default AdsHome;

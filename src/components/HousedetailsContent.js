@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../styles/Housedetailscontent.css";
 
-class Housedetailscontent extends Component {
+class HouseDetailsContent extends Component {
   constructor(props) {
     super(props);
 
@@ -67,4 +67,4 @@ class Housedetailscontent extends Component {
   }
 }
 
-export default Housedetailscontent;
+export default HouseDetailsContent;

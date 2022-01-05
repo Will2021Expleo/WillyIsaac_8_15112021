@@ -1,18 +1,18 @@
 import React, { Component } from "react";
-import Adshome from "../components/Adshome";
-import Bannerhome from "../components/Bannerhome";
+import AdsHome from "../components/AdsHome";
+import BannerHome from "../components/BannerHome";
 
 // import "../styles/App.css";
 
-class Homepage extends Component {
+class HomePage extends Component {
   render() {
     return (
       <div>
-        <Bannerhome />
-        <Adshome />
+        <BannerHome />
+        <AdsHome />
       </div>
     );
   }
 }
 
-export default Homepage;
+export default HomePage;

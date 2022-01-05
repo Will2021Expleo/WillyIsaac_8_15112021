@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "../styles/Housedetailsheader.css";
-import Houserating from "./Houserating";
+import HouseRating from "./HouseRating";
 
-class Housedetailsheader extends Component {
+class HouseDetailsHeader extends Component {
   render() {
     return (
       <div className="house-details__header">
@@ -28,7 +28,7 @@ class Housedetailsheader extends Component {
           </div>
           {/* <div className="rating">{this.props.rating}</div> */}
           <div className="house-details__header__rating">
-            <Houserating key={this.props.rating} rating={this.props.rating} />
+            <HouseRating key={this.props.rating} rating={this.props.rating} />
           </div>
         </div>
       </div>
@@ -36,4 +36,4 @@ class Housedetailsheader extends Component {
   }
 }
 
-export default Housedetailsheader;
+export default HouseDetailsHeader;
